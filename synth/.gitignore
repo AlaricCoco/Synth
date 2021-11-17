@@ -1,24 +1,100 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Random files we don't need to include
+.DS_STORE
+.idea
+.project
+.vagrant
+.vscode
+.tinker.*
+.phpunit.result.cache
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# File to specify local DB settings
+.env
+.env.testing
+.env.dusk.local
+.env.copy
 
-# testing
+# Calendar credentials
+google.json
+google-service-account.json
+outlook.json
+test-outlook.json
+
+# Public and Private Keys
+salesforce.cer
+salesforce.key
+
+# NodeJs
+node_modules
+npm-debug.log
+
 /coverage
 
-# production
+yarn-error.log
+
+/resources/lang/*.json
+/resources/views/_partials/ui/client-view-theme.blade.php
+
+# Files
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
+Homestead.yaml
+email_preview.html
+
+# Folders
 /build
+/storage/*.key
+/storage/framework/testing/*
+/storage/logs/*.log
+/storage/private-data/*
+/storage/purify/*
+/storage/tmp/*
+/vendor
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.idea/workspace.xml
+/public/css
+/public/fonts
+/public/images
+/public/js/admin
+/public/js/backend
+/public/js/check-in
+/public/js/client
+/public/js/frontend
+/public/js/minified
+/public/js/callback-service
+/public/js/tests
+/public/js/config.js
+/public/js/coconut.js
+/public/js/tv
+/public/mix-manifest.json
+/public/sounds
+/public/theme
+/public/vendors
+/public/uploads
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+laravel-echo-server.json
+laravel-echo-server.lock
+docker-compose.override.yml
+
+# Added to get rid of SASS compilation warnings regarding importing CSS files
+resources/vendors/intl-tel-input
+resources/vendors/select2/select2-sass.scss
+resources/vendors/jquery-qtip/jquery.qtip.scss
+laravel-echo-server.lock
+
+*.tar.gz
+
+# Docker related
+# Certificates created for ssl
+docker/app/certs
+docker/test/*.gz
+rds-ca-2019-root.pem
+
+# demo seeding files
+config/demo-seed.php
+storage/appointments.json
+storage/walkins.json
+storage/clients.json
+phpunit.maria.xml.*
+/gsuite.json
+
+cloudfront-private-key.pem
